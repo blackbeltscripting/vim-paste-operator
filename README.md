@@ -1,15 +1,14 @@
 Paste Operator
 ==============
 
-Paste Operator provides vim mappings to paste text using motion or visual
-selection.  It removes the selected motion or selection and replaces it with
-whatever buffer you request.  If you want to use the paste button and not the
-operator, simply hit `pp`
+Paste Operator provides vim mappings to paste text using motion.  It removes
+the selected motion or selection and replaces it with whatever buffer you
+request.  If you want to use the paste button and not the operator, simply
+hit `pp`. To paste backwards, you can do either `pP` or the regular `P`.
 
 Usage
 -----
 
-If you want to use the paste button and not the operator, simply hit `pp`.
 The default mapping is `p`, and can be followed by any motion or text
 object. For instance:
 

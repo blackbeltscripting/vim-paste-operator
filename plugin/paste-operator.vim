@@ -11,12 +11,7 @@ let s:linewise = 'linewise'
 function! s:paste_operator(type, ...) abort
     let register = @p
     let mode = <SID>resolve_mode(a:type, a:0)
-    if mode == s:linewise
-        let lines = { 'start': line("'["), 'end': line("']") }
-        silent exe lines.start . ',' . lines.end . '"pdP'
-    elseif mode == s:visual || mode == s:blockwise
-        silent exe 'normal! `<' . a:type . '`>"pdP'
-    else
+    if mode == s:motion
         silent exe "normal! `[v`]\"_c".getreg(g:currentRegister)
     endif
     let @0 = @p
