@@ -12,7 +12,7 @@ Usage
 The default mapping is `p`, and can be followed by any motion or text
 object. For instance:
 
-- `pp`    => regular paste
+- `pp`    => same as `p`
 - `pP`    => same as `P`
 - `pta`   => paste until next occurance of `a`
 - `pTa`   => paste until last occurance of `a`
