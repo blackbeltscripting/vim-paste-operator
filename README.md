@@ -29,7 +29,8 @@ Installation
 ------------
 
 If you don't have a preferred installation method, I recommend using
-[vim-plug](https://github.com/junegunn/vim-plug) as it works well with neovim.
+[vim-plug](https://github.com/junegunn/vim-plug) as it works well with
+[neovim](https://neovim.io/).
 
 Assuming you have vim-plugged installed and configured, the following steps will
 install the plugin:
