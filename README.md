@@ -14,6 +14,10 @@ object. For instance:
 
 - `pp`    => regular paste
 - `pP`    => same as `P`
+- `pta`   => paste until next occurance of `a`
+- `pTa`   => paste until last occurance of `a`
+- `pfa`   => paste to next occurance of `a`
+- `pFa`   => paste to last occurance of `a`
 - `paw`   => replaces all word with paste buffer `0`
 - `pi"`   => replaces inside double quotes with paste buffer
 - `"ypi'` => replaces inside single quotes with paste buffer `y`
