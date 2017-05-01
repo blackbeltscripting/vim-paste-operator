@@ -14,7 +14,7 @@ object. For instance:
 
 - `pp`    => regular paste
 - `pP`    => same as `P`
-- `paw`   => replaces all word with paste buffer 0
+- `paw`   => replaces all word with paste buffer `0`
 - `pi"`   => replaces inside double quotes with paste buffer
 - `"ypi'` => replaces inside single quotes with paste buffer `y`
 
