@@ -38,6 +38,7 @@ nnoremap <silent> <Plug>PasteOperator :let g:currentRegister=v:register<cr>:<C-U
 
 if !hasmapto('<Plug>PasteOperator', 'n') || maparg('p', 'n') ==# ''
     nnoremap pp p
+    nnoremap pP P
     nmap p <Plug>PasteOperator
 endif
 

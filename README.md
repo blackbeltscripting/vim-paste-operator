@@ -14,9 +14,10 @@ The default mapping is `p`, and can be followed by any motion or text
 object. For instance:
 
 - `pp`    => regular paste
-- `piw`   => replaces word with paste buffer
-- `pi'`   => replaces inside quotes with paste buffer
-- `"1pi'` => replaces inside quotes with paste buffer `1`
+- `pP`    => same as `P`
+- `paw`   => replaces all word with paste buffer 0
+- `pi"`   => replaces inside double quotes with paste buffer
+- `"ypi'` => replaces inside single quotes with paste buffer `y`
 
 
 Options
