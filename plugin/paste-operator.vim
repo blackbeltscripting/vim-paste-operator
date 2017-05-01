@@ -19,6 +19,8 @@ function! s:paste_operator(type, ...) abort
     else
         silent exe "normal! `[v`]\"_c".getreg(g:currentRegister)
     endif
+    let @0 = @p
+    let @p = register
 endfunction
 
 function! s:resolve_mode(type, arg)
