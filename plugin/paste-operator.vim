@@ -13,6 +13,9 @@ function! s:paste_operator(type, ...) abort
     let mode = <SID>resolve_mode(a:type, a:0)
     if mode == s:motion
         silent exe "normal! `[v`]\"_c".getreg(g:currentRegister)
+    elseif mode == s:linewise
+        let lines = { 'start': line("'["), 'end': line("']") }
+        silent exe lines.start . "," . lines.end . "\"_c".getreg(g:currentRegister)
     endif
     let @0 = @p
     let @p = register
